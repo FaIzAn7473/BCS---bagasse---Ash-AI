@@ -1,0 +1,134 @@
+.about-page { }
+
+.about-hero { margin-bottom: 28px; }
+.about-title { font-size: 26px; font-weight: 800; color: #0d3258; }
+.about-desc  { color: #64748b; font-size: 15px; margin-top: 6px; max-width: 640px; }
+
+/* ── Cards ───────────────────────────────────────────────────── */
+.about-card { margin-bottom: 24px; }
+
+.about-section-head {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0d3258;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.about-body-text {
+  color: #374151;
+  font-size: 14.5px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* ── Key-value grid ──────────────────────────────────────────── */
+.about-kv-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.about-kv { display: flex; gap: 16px; align-items: baseline; flex-wrap: wrap; }
+.about-kv-label {
+  min-width: 160px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  flex-shrink: 0;
+}
+.about-kv-value { font-size: 14.5px; color: #1e293b; font-weight: 500; }
+
+/* ── BA chips ────────────────────────────────────────────────── */
+.ba-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0;
+}
+.ba-chip {
+  background: linear-gradient(135deg, #0d3258, #1a5276);
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.about-note {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.6;
+  background: #f8fafc;
+  border-left: 3px solid #94a3b8;
+  padding: 10px 14px;
+  border-radius: 0 8px 8px 0;
+}
+
+/* ── Lab tests ───────────────────────────────────────────────── */
+.tests-list { display: flex; flex-direction: column; gap: 14px; }
+.test-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+.test-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+.test-name { font-size: 14px; font-weight: 700; color: #0d3258; }
+.test-desc { font-size: 13px; color: #64748b; margin-top: 3px; }
+
+/* ── AI steps ────────────────────────────────────────────────── */
+.ai-steps { display: flex; flex-direction: column; gap: 12px; }
+.ai-step  {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.ai-step-num {
+  min-width: 28px; height: 28px;
+  background: #0d3258;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.ai-step-text { font-size: 14px; color: #374151; padding-top: 3px; line-height: 1.5; }
+
+/* ── Algorithm cards ─────────────────────────────────────────── */
+.algo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.algo-card {
+  background: #f0f6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+.algo-name { font-size: 14px; font-weight: 700; color: #0d3258; margin-bottom: 6px; }
+.algo-desc { font-size: 13px; color: #64748b; }
+
+/* ── Disclaimer ──────────────────────────────────────────────── */
+.about-disclaimer {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 20px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+@media (max-width: 560px) {
+  .about-kv-label { min-width: 120px; }
+  .about-title { font-size: 21px; }
+}

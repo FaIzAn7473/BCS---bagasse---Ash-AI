@@ -1,0 +1,98 @@
+.ds-page { }
+
+.ds-hero { margin-bottom: 28px; }
+.ds-title { font-size: 26px; font-weight: 800; color: #0d3258; }
+.ds-desc  { color: #64748b; font-size: 15px; margin-top: 6px; max-width: 640px; }
+
+/* ── Upload card ─────────────────────────────────────────────── */
+.ds-upload-card { margin-bottom: 24px; }
+
+.col-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.col-chip {
+  background: #dbeafe;
+  color: #1e40af;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+}
+
+.upload-form { display: flex; flex-direction: column; gap: 16px; }
+
+.file-drop {
+  display: block;
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 28px 20px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  background: #f8fafc;
+}
+.file-drop:hover { border-color: #0f4c81; background: #eff6ff; }
+
+.file-input { display: none; }
+
+.file-drop-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  pointer-events: none;
+}
+.file-icon { font-size: 28px; }
+.file-text { font-size: 14px; font-weight: 600; color: #374151; }
+.file-hint { font-size: 12px; color: #94a3b8; }
+
+.upload-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.inline-code {
+  font-family: 'Courier New', monospace;
+  background: #f1f5f9;
+  color: #0f4c81;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12.5px;
+}
+
+/* ── Stats ────────────────────────────────────────────────────── */
+.ds-stats-card { margin-bottom: 24px; }
+.ds-stat-grid  { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+
+/* ── Table ────────────────────────────────────────────────────── */
+.ds-table-card { }
+.table-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+/* Spinner reuse */
+.btn-spinner {
+  display: inline-block;
+  width: 16px; height: 16px;
+  border: 2.5px solid rgba(255,255,255,0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin-right: 8px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 560px) {
+  .upload-actions { flex-direction: column; }
+  .upload-actions .btn-primary,
+  .upload-actions .btn-secondary { width: 100%; justify-content: center; }
+}
